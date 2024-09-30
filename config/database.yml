@@ -13,7 +13,6 @@ development:
 
 test:
   <<: *default
-  password:
   host: 127.0.0.1
   database: <%= ENV.fetch("MYSQL_DB") { 'mysql_db' } %>_test #.env 環境変数を参照
 
