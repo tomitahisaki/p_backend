@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 # Omakase Ruby styling for Rails
 inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
@@ -231,9 +233,6 @@ Metrics/ParameterLists:
 RSpec/NestedGroups:
   Enabled: false
 
-Capybara/CurrentPathExpectation:
-  Enabled: false
-
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 
@@ -247,9 +246,6 @@ RSpec/MultipleExpectations:
   Enabled: false
 
 RSpec/LetSetup:
-  Enabled: false
-
-RSpec/Capybara/FeatureMethods:
   Enabled: false
 
 RSpec/ChangeByZero:
