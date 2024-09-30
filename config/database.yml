@@ -13,8 +13,9 @@ development:
 
 test:
   <<: *default
-  database: mysql_db_test # ci でのテスト用のDB名を指定
-  host: db_test # ci でのテスト用のDBのサービス名を指定
+  password:
+  host: 127.0.0.1
+  database: mysql_db_test
 
 # production　プロジェクトに合わせて修正。
 production:
