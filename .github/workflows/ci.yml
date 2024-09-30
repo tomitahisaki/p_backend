@@ -22,7 +22,6 @@ jobs:
           MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
           MYSQL_DATABASE: mysql_db_test
           MYSQL_DB: mysql_db
-          MYSQL_HOST: db
         options: >-
           --health-cmd "mysqladmin ping"
           --health-interval 10s 
