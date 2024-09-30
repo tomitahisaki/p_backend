@@ -21,12 +21,25 @@ module PBackend
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config.time_zone = "Central Time (US & Canada)"
+    config.active_record.default_timezone = :local
+    config.time_zone = 'Tokyo'
     # config.eager_load_paths << Rails.root.join("extras")
+
+     # i18nの設定
+     config.i18n.default_locale = :ja
+     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
+    config.generators do |g|
+      g.test_framework :rspec,
+                       request_specs: true,
+                       model_specs: true
+      g.factory_bot true
+      g.factory_bot dir: 'spec/factories'
+    end
+
     config.api_only = true
   end
 end
