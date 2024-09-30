@@ -13,6 +13,7 @@ development:
 
 test:
   <<: *default
+  username: root
   password:
   host: 127.0.0.1
   database: mysql_db_test
