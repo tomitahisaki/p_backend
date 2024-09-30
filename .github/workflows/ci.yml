@@ -22,9 +22,6 @@ jobs:
           MYSQL_ALLOW_EMPKTY_PASSWORD: "yes"
           MYSQL_DATABASE: mysql_db_test
           MYSQL_DB: mysql_db
-          MYSQL_USER: root
-          MYSQL_ROOT_PASSWORD: password
-          MYSQL_PORT: 3306
         options: >-
           --health-cmd "mysqladmin ping"
           --health-interval 10s 
