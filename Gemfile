@@ -14,18 +14,18 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman"
-  gem 'factory_bot_rails'
-  gem 'rspec-rails'
-  gem 'rubocop'
+  gem "factory_bot_rails"
+  gem "rspec-rails"
+  gem "rubocop"
   gem "rubocop-rails-omakase"
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
   gem "bullet"
-  gem 'annotate'
+  gem "annotate"
 end
 
 group :test do
-  gem 'simplecov'
-  gem 'simplecov-cobertura'
+  gem "simplecov"
+  gem "simplecov-cobertura"
 end
