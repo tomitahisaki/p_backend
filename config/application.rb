@@ -1,6 +1,8 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -23,7 +25,7 @@ module PBackend
     #
     config.active_record.default_timezone = :local
     config.time_zone = 'Tokyo'
-    # config.eager_load_paths << Rails.root.join("extras")
+     # config.eager_load_paths << Rails.root.join("extras")
 
      # i18nの設定
      config.i18n.default_locale = :ja
