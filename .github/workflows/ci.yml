@@ -20,6 +20,7 @@ jobs:
         env:
           LANG: "ja_JP.UTF-8"
           MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+          MYSQL_DATABASE: mysql_db_test
         options: >-
           --health-cmd "mysqladmin ping"
           --health-interval 10s 
