@@ -19,7 +19,7 @@ jobs:
           - 3306:3306
         env:
           LANG: "ja_JP.UTF-8"
-          MYSQL_ALLOW_EMPKTY_PASSWORD: "yes"
+          MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
           MYSQL_DATABASE: mysql_db_test
           MYSQL_DB: mysql_db
         options: >-
