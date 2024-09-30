@@ -124,7 +124,8 @@ Style/EmptyMethod:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: always
 
 Style/GuardClause:
   Enabled: false
@@ -253,3 +254,6 @@ RSpec/ChangeByZero:
 
 Naming/VariableNumber:
   Enabled: false
+
+Style/MutableConstant:
+  Enabled: true
