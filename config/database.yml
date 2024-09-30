@@ -13,7 +13,7 @@ development:
 
 test:
   <<: *default
-  database: <%= ENV.fetch("MYSQL_DB") { '_test' } %>_test #.env 環境変数を参照
+  database: <%= ENV.fetch("MYSQL_DB") { '' } %>_test #.env 環境変数を参照
 
 # production　プロジェクトに合わせて修正。
 production:
