@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 7.2.1'
+gem 'rails', '~> 7.2.2'
 gem 'mysql2', '~> 0.5'
 gem 'puma', '>= 5.0'
 # Use Redis adapter to run Action Cable in production
